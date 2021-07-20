@@ -30,16 +30,12 @@ class MovieModal extends React.Component<props, state> {
 
   handleClose = () => {
     this.props.closeModal();
+    this.setState({trivia: ""})
   }
 
   componentDidUpdate(prevProps: props) {
     if(prevProps.open === false){
-      console.log('getting trivia');
       this.getTrivia();
-    }else{
-      this.setState({
-        trivia: ""
-      })
     }
   }
   
