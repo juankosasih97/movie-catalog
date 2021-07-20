@@ -36,6 +36,10 @@ class MovieModal extends React.Component<props, state> {
     if(prevProps.open === false){
       console.log('getting trivia');
       this.getTrivia();
+    }else{
+      this.setState({
+        trivia: ""
+      })
     }
   }
   

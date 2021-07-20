@@ -26,7 +26,11 @@ const RootReducer = (state = initState, action: any) => {
   if (action.type === "CLOSE_MODAL"){
     return {
       ...state,
-      isModalOpen: false
+      isModalOpen: false,
+      modalImage: "",
+      modalTitle: "",
+      modalDescription: "",
+      modalReleaseYear: 0
     }
   }
   if (action.type === "OPEN_ERROR"){
@@ -39,7 +43,8 @@ const RootReducer = (state = initState, action: any) => {
   if (action.type === "CLOSE_ERROR"){
     return {
       ...state,
-      isErrorOpen: false
+      isErrorOpen: false,
+      errorMessage: ""
     }
   }
   return state;
