@@ -12,7 +12,7 @@ import ErrorPopup from './components/util/ErrorPopup';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div id='root' className="App">
         <AppBar position="static">
           <Toolbar>
             <Grid
