@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 
 const homeList = [
     {
-      image: '',
       title: 'Popular Series',
       url: '/series'
     },
     {
-      image: '',
       title: 'Popular Movies',
       url: '/movies'
     }
@@ -29,7 +27,6 @@ export default function Home() {
                   <Card>
                     <CardActionArea>
                       <CardContent>
-                        <img src={movie.image} alt={movie.title} style={{maxWidth: "100%", maxHeight: "100%"}}></img>
                         <Typography gutterBottom variant="h5" component="h2">
                           {movie.title}
                         </Typography>
