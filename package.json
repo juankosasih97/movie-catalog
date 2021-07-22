@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
-    "start:ci": "serve --no-clipboard --listen ${PORT:-3000}",
+    "start:ci": "serve build -s --no-clipboard --listen ${PORT:-3000}",
     "cy:verify": "cypress verify",
     "cy:run:record": "cypress run --record",
     "cy:run": "cypress run"

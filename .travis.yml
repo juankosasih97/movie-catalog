@@ -16,6 +16,7 @@ cache:
     - npm run cy:verify
 
 script:
+  - npm run build
   # start server in the background
   - npm run start:ci &
   # run all Cypress tests and record on the dashboard
