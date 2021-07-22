@@ -32,7 +32,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open"
+    "cy:open": "cypress open",
+    "start:ci": "serve --no-clipboard --listen ${PORT:-80}",
+    "cy:verify": "cypress verify",
+    "cy:run:record": "cypress run --record",
+    "cy:run": "cypress run"
   },
   "eslintConfig": {
     "extends": [
