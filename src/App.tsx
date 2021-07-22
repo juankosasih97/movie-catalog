@@ -53,8 +53,8 @@ function App() {
 function Footer() {
   return (
     <div>
-      <Box bgcolor="#282c34">
-        <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
+      <Box bgcolor="#282c34" color="white">
+        <ButtonGroup variant="text" color="inherit">
           <Button>Home</Button>
           <Button>Terms and Conditions</Button>
           <Button>Privacy Policy</Button>
